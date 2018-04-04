@@ -27,12 +27,14 @@ body {
 		rgba(126, 213, 111, 0.8),
 		rgba(40, 180, 131, 0.8)),
 	url(../img/hero.jpg);
+
 	background-size: cover;
 	background-position: top;
-	position: relative;
 	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100% );
+	position: relative;
 
 }
+
 .logo-box {
 	position: absolute;
 	top: 40px;
@@ -46,7 +48,7 @@ body {
 
 .text-box {
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
@@ -55,8 +57,8 @@ body {
 .heading-primary {
 	color: #fff;
 	text-transform: uppercase;
-
 	backface-visibility: hidden;
+	margin-bottom: 60px;
 
 }
 
@@ -117,6 +119,7 @@ body {
 	}
 }
 
+<<<<<<< HEAD
 
 .btn:link,
 .btn:visited {
@@ -126,6 +129,29 @@ body {
 		display: inline-block;
 		border-radius: 100px;
 		transition: all .2s;
+=======
+@keyframes moveInBottom {
+	0%{
+		opacity:0;
+		transform: translateY(30px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+.btn:link,
+.btn:visited {
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 15px 40px;
+	display: inline-block;
+	border-radius: 100px;
+	transition: all .2s;
+	position: relative;
+>>>>>>> 83bbcdc962e18c452543d6462e6143f636fe7121
 }
 
 .btn:hover{
@@ -138,9 +164,42 @@ body {
 	box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
 
+<<<<<<< HEAD
 
 .btn-white{
 	background-color: #fff;
 	color: #777;
 
+=======
+.btn-white {
+	background-color: #fff;
+	color: #777;
+}
+
+.btn::after {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	border-radius: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transition: all .4s;
+}
+
+.btn-white::after{
+	background-color: #fff;
+}
+
+.btn:hover::after{
+	transform: scaleX(1.4) scaleY(1.6);
+	opacity: 0;
+}
+
+.btn-animated{
+	animation: moveInBottom .5s ease-out 1s;
+	animation-fill-mode: backwards;
+>>>>>>> 83bbcdc962e18c452543d6462e6143f636fe7121
 }
