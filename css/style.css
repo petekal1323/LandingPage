@@ -119,17 +119,7 @@ body {
 	}
 }
 
-<<<<<<< HEAD
 
-.btn:link,
-.btn:visited {
-		text-transform: uppercase;
-		text-decoration: none;
-		padding: 15px 40px;
-		display: inline-block;
-		border-radius: 100px;
-		transition: all .2s;
-=======
 @keyframes moveInBottom {
 	0%{
 		opacity:0;
@@ -151,7 +141,7 @@ body {
 	border-radius: 100px;
 	transition: all .2s;
 	position: relative;
->>>>>>> 83bbcdc962e18c452543d6462e6143f636fe7121
+
 }
 
 .btn:hover{
@@ -164,13 +154,7 @@ body {
 	box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
 
-<<<<<<< HEAD
 
-.btn-white{
-	background-color: #fff;
-	color: #777;
-
-=======
 .btn-white {
 	background-color: #fff;
 	color: #777;
@@ -201,5 +185,5 @@ body {
 .btn-animated{
 	animation: moveInBottom .5s ease-out 1s;
 	animation-fill-mode: backwards;
->>>>>>> 83bbcdc962e18c452543d6462e6143f636fe7121
+
 }
