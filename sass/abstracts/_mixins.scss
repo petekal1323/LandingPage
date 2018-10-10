@@ -19,3 +19,44 @@
  //   left: 50%;
  //   transform: translate(-50%, -50%);
  // }
+
+
+
+ //MEDIA QUERY MANAGER
+
+ /*
+
+ 0-600PX: Phone
+ 600PX - 900PX: Tablet PORTRAIT
+ 900PX-1200PX: Tablet LANDSCAPE
+ 1200-1800PX: Normal Styles
+ 1800PX + : Big Destkop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-landsape
+- big desktop
+
+
+1em = 16px
+
+*/
+
+@mixin respond($breakpoint){
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em){ @content };  //600 / 16
+  }
+
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em){ @content }; // 900 / 16
+  }
+
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em){ @content }; // 1200 / 16
+  }
+
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em){ @content }; // 1800 / 16
+  }
+}
