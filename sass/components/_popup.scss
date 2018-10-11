@@ -32,16 +32,15 @@
     }
 
     @include respond(tab-port){
-      width: 50%;
+      width: 70%;
       top: 52%;
       margin-bottom: 2rem;
-      margin-top: 2rem;
+      margin-top: 10rem;
     }
 
     @include respond(phone){
       width: 90%;
     }
-
   }
 
   &__left {
@@ -53,11 +52,12 @@
       width: 100%;
       display: block;
       margin: 0 auto;
+
+      @include respondHeight(maxHeight){
+        display: none;
+      }
     }
 
-    // @include respond(phone){
-    //   display: none;
-    // }
   }
 
   &__right {
@@ -82,6 +82,7 @@
       }
       @include respond(phone){
         width: 50%;
+        font-size: 1.4rem;
       }
     }
     .heading-secondary{
@@ -139,6 +140,9 @@
       @include respond(tab-port){
         font-size: 5em;
         color: $color-white;
+      }
+      @include respondHeight(maxHeight){
+        color: $color-grey-dark;
       }
     }
 

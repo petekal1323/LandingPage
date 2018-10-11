@@ -60,3 +60,11 @@ $breakpoint arguement choices:
     @media (min-width: 112.5em){ @content }; // 1800 / 16
   }
 }
+
+
+
+@mixin respondHeight($breakpoint){
+  @if $breakpoint == maxHeight {
+    @media (max-height: 43.75em){ @content };  //700 / 16
+  }
+}
