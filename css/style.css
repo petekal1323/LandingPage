@@ -211,6 +211,9 @@ body {
   color: #fff; }
   .btn--green::after {
     background-color: #fff; }
+  @media (max-width: 56.25em) {
+    .btn--green {
+      margin-bottom: 3rem; } }
 
 .btn::after {
   content: "";
@@ -565,36 +568,67 @@ body {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all .5s .2s; }
-    @media (max-width: 56.25em) {
+    @media (max-width: 75em) {
       .popup__content {
         width: 95%; } }
+    @media (max-width: 56.25em) {
+      .popup__content {
+        width: 50%; } }
     @media (max-width: 37.5em) {
       .popup__content {
-        width: 100%; } }
+        width: 90%; } }
   .popup__left {
     width: 33.333333%;
     display: table-cell;
     vertical-align: middle; }
+    @media (max-width: 56.25em) {
+      .popup__left {
+        width: 75%;
+        display: block;
+        margin: 0 auto; } }
+    @media (max-width: 37.5em) {
+      .popup__left {
+        display: none; } }
   .popup__right {
     width: 66.6666667%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
+    @media (max-width: 75em) {
+      .popup__right {
+        width: 95%;
+        padding: 0 5rem; } }
+    @media (max-width: 56.25em) {
+      .popup__right {
+        width: 100%;
+        display: block;
+        padding: 0 1rem; } }
+    @media (max-width: 56.25em) {
+      .popup__right .btn--green {
+        width: 100%;
+        text-align: center; } }
+    @media (max-width: 37.5em) {
+      .popup__right .btn--green {
+        width: 50%; } }
+    @media (max-width: 56.25em) {
+      .popup__right .heading-secondary {
+        width: 100%;
+        text-align: center; } }
   .popup__img {
     display: block;
     width: 100%; }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
-    -webkit-column-count: 2;
     column-count: 2;
-    -webkit-column-gap: 4rem;
     column-gap: 4rem;
-    -webkit-column-rule: 1px solid #eee;
     column-rule: 1px solid #eee;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
     hyphens: auto; }
+    @media (max-width: 56.25em) {
+      .popup__text {
+        margin-bottom: 2rem;
+        column-count: 1;
+        column-gap: 1rem; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }

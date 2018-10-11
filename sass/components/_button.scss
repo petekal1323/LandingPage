@@ -45,6 +45,10 @@
     &::after{
     	background-color: $color-white;
     }
+
+    @include respond(tab-port){
+      margin-bottom: 3rem;
+    }
   }
 
   &::after {
