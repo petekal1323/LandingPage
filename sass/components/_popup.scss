@@ -10,6 +10,10 @@
   visibility: hidden;
   transition: all .3s;
 
+  @include respond(tab-port){
+    overflow: auto;
+  }
+
   &__content {
     @include center-horizontal-vertical;
     width: 75%;
@@ -29,6 +33,8 @@
 
     @include respond(tab-port){
       width: 50%;
+      top: 55%;
+      margin-bottom: 2rem auto;
     }
 
     @include respond(phone){
@@ -43,14 +49,14 @@
     vertical-align: middle;
 
     @include respond(tab-port){
-      width: 75%;
+      width: 100%;
       display: block;
       margin: 0 auto;
     }
 
-    @include respond(phone){
-      display: none;
-    }
+    // @include respond(phone){
+    //   display: none;
+    // }
   }
 
   &__right {
@@ -129,6 +135,10 @@
       display: inline-block;
       transition: all .2s;
       line-height: 1;
+      @include respond(tab-port){
+        font-size: 5em;
+        color: $color-white;
+      }
     }
 
     &:hover{
